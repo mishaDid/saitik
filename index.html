@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вебсайт Блогера VeTaL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать на личный блог блогера VeTaL</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">О блогере</a></li>
+        <li><a href="#videos">Видео</a></li>
+        <li><a href="#donate">Донат</a></li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>О блогере VeTaL</h2>
+        <p>VeTaL — популярный блогер, который снимает видео на ПК, включая популярную игру GTA в Украине. Он делится своим игровым опытом и множеством интересных моментов с подписчиками.</p>
+    </section>
+
+    <section id="videos">
+        <h2>Видео с ТикТока</h2>
+        <p>Посмотрите все последние видео блогера VeTaL на его канале в ТикТок:</p>
+        <button onclick="showTikTokLinks()">Канал в ТикТоке</button>
+        <div id="tiktok-links" style="display:none;">
+            <ul>
+                <li><a href="https://www.tiktok.com/@votal">Канал VeTaL в ТикТок</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="donate">
+        <h2>Поддержка и Донат</h2>
+        <button onclick="showDonateOptions()">Задонатить</button>
+        <div id="donate-options" style="display:none;">
+            <ul>
+                <li>ПриватБанк: 5168 7520 2524 6888</li>
+                <li>Монобанк: 4441 1110 4151 0300</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы, напишите на email: contact@votal.com</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Все права защищены. Все материалы принадлежат блогеру VeTaL.</p>
+</footer>
+
+<script>
+    function showTikTokLinks() {
+        var links = document.getElementById('tiktok-links');
+        if (links.style.display === "none") {
+            links.style.display = "block";
+        } else {
+            links.style.display = "none";
+        }
+    }
+
+    function showDonateOptions() {
+        var donate = document.getElementById('donate-options');
+        if (donate.style.display === "none") {
+            donate.style.display = "block";
+        } else {
+            donate.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
